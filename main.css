@@ -79,7 +79,6 @@ img {
 }
 
 
-
 .btn {
     display: inline-block;
     background: #000;
@@ -110,9 +109,11 @@ footer {
     display: flex;
     justify-content: center;
 }
-footer .footer_item {
-   font-weight: 500;
+footer .footer_item li{
+   display: flex;
+   font-weight: 600;
    font-size: 1rem;
+   list-style: none;
 }
 
 @media only screen and (max-width: 768px) {
@@ -130,6 +131,9 @@ footer .footer_item {
     padding: 0.8rem 1.1rem;
     text-transform: uppercase;
 }
+    footer .footer_item li {
+     font-size: .6rem;
+    }
 }
 
 @media  (max-width: 320px) {
@@ -148,8 +152,8 @@ footer .footer_item {
         font-weight: 400;
         font-size: .8rem;
     }
-    footer .footer_item {
-     font-weight: 500;
+    footer .footer_item li {
      font-size: .5rem;
     }
+    
 }
